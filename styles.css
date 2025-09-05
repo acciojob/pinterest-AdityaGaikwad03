@@ -50,8 +50,11 @@
 }
 
 /* Right image section */
-.hero-image{
-   width: 100%;
-  height: 100%;
-  object-fit: cover;
+.hero-image {
+  width: 400px;       /* or 100% of container */
+  height: 300px;      /* must be explicit */
+  object-fit: cover;  /* now works */
+  display: block;     /* remove inline spacing */
+  border-radius: 10px; /* optional */
 }
+
